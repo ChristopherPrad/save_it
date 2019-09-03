@@ -23,7 +23,7 @@ class Project extends Component {
     const project = {
       name: this.state.name,
       description: this.state.description,
-      image: this.state.image,
+      // image: this.state.image,
       auteur: this.state.auteur,
       date: this.state.date,
       id: this.state.id
@@ -67,7 +67,7 @@ class Project extends Component {
                 />
               </div>
 
-              <div className="form-group">
+              {/* <div className="form-group">
                 <label htmlFor="image">Image</label>
                 <input
                   type="email"
@@ -77,7 +77,7 @@ class Project extends Component {
                   value={this.state.image}
                   onChange={this.onChange}
                 />
-              </div>
+              </div> */}
 
               <div className="form-group">
                 <label htmlFor="auteur">Auteur</label>
@@ -90,17 +90,7 @@ class Project extends Component {
                   onChange={this.onChange}
                 />
               </div>
-              <div className="form-group">
-                <label htmlFor="id">Id</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="id"
-                  placeholder="Enter auteur"
-                  value={this.state.id}
-                  onChange={this.onChange}
-                />
-              </div>
+
               <button
                 type="submit"
                 className="btn btn-lg btn-primary btn-block"

@@ -24,6 +24,7 @@ export const login = user => {
       return res.data;
     })
     .catch(err => {
+      console.log("coucou");
       console.log(err);
     });
 };

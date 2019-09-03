@@ -60,12 +60,11 @@ users.post("/login", (req, res) => {
           let token = jwt.sign(payload, process.env.SECRET_KEY, {
             expiresIn: 1440
           });
+          console.log(token);
           res.send(token);
         } else {
           res.json({ error: "User does not exist" });
         }
-      } else {
-        res.json({ error: "User does not exist" });
       }
     })
     .catch(err => {
